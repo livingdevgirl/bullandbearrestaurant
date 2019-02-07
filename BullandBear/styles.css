@@ -1,0 +1,90 @@
+.topNav{
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.addressNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: hsla(68, 70%, 33%, 0.6);
+  width: 20%;
+}
+
+.addressNav a{
+  align-self: center;
+  font-family: 'Francois One', sans-serif;
+  font-size: 2rem;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.topNav a{
+  font-family: 'Francois One', sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin: 22px;
+  top: 100px;
+  text-decoration: overline;
+
+}
+body{
+  font-family: 'Francois One', sans-serif;
+}
+
+
+html{
+
+  background: url(./assets/bgBullandBearRaleigh.JPG) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: -555555;
+}
+
+footer{
+
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 2rem;
+  border: .5px solid #255002;
+  background: #e5fadb;
+  color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  .topNav {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsla(68, 70%, 33%, 0.6);
+    width: 100vw;
+  }
+  .addressNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: flex-end;
+    width:60%;
+    background-color: hsla(68, 70%, 33%, 0.8);
+  }
+}
+@media screen and (max-width: 992px) {
+  .topNav {
+    justify-content: flex-start;
+    background-color: hsla(68, 70%, 33%, 0.6);
+    width: 40%;
+  }
+
+  .addressNav{
+    background-color: hsla(68, 70%, 33%, 0.8);
+    width: 100%;
+  }
+}
